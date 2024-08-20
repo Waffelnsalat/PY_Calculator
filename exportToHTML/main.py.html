@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># import for windows</span>
+<span class="s2">import </span><span class="s1">tkinter</span>
+<span class="s2">from </span><span class="s1">tkinter </span><span class="s2">import </span><span class="s1">*</span>
+
+
+<span class="s0"># define new window</span>
+<span class="s1">calculator = Tk()</span>
+<span class="s0"># configure frame of window</span>
+<span class="s1">calculator.title(</span><span class="s3">&quot;Calculator&quot;</span><span class="s1">)</span>
+
+<span class="s0"># configure how the frames in the window are build</span>
+
+<span class="s1">calculator.rowconfigure(</span><span class="s4">0</span><span class="s2">, </span><span class="s1">weight=</span><span class="s4">1</span><span class="s1">)</span>
+<span class="s1">calculator.rowconfigure([</span><span class="s4">1</span><span class="s2">, </span><span class="s4">2</span><span class="s2">, </span><span class="s4">3</span><span class="s2">, </span><span class="s4">4</span><span class="s1">]</span><span class="s2">, </span><span class="s1">minsize=</span><span class="s4">60</span><span class="s2">, </span><span class="s1">weight=</span><span class="s4">1</span><span class="s1">)</span>
+<span class="s1">calculator.columnconfigure([</span><span class="s4">0</span><span class="s2">, </span><span class="s4">1</span><span class="s2">, </span><span class="s4">2</span><span class="s2">, </span><span class="s4">3</span><span class="s1">]</span><span class="s2">, </span><span class="s1">minsize=</span><span class="s4">60</span><span class="s2">, </span><span class="s1">weight=</span><span class="s4">1</span><span class="s1">)</span>
+
+
+<span class="s0"># define label update when button pressed</span>
+
+<span class="s2">def </span><span class="s1">button_one():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;1&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_two():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;2&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_three():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;3&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_four():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;4&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_five():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;5&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_six():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;6&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_seven():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;7&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_eight():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;8&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_nine():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;9&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_plus():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;+&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_minus():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;-&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_multiple():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;*&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_devide():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;/&quot;</span>
+
+
+<span class="s2">def </span><span class="s1">button_point():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;.&quot;</span>
+
+<span class="s2">def </span><span class="s1">button_zero():</span>
+    <span class="s1">value = counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">]</span>
+    <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value + </span><span class="s3">&quot;0&quot;</span>
+
+<span class="s0">#define calculation</span>
+<span class="s2">def </span><span class="s1">button_calc():</span>
+    <span class="s1">value = str(counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">])</span>
+    <span class="s2">try</span><span class="s1">:</span>
+        <span class="s1">result = eval(value)</span>
+        <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = str(result)</span>
+    <span class="s2">except</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s3">&quot;SyntaxError&quot;</span><span class="s1">)</span>
+        <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = </span><span class="s3">&quot;Syntax Error&quot;</span>
+
+<span class="s0">#define delete button</span>
+<span class="s2">def </span><span class="s1">button_del():</span>
+    <span class="s1">value = str(counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">])</span>
+    <span class="s2">try</span><span class="s1">:</span>
+        <span class="s1">counter[</span><span class="s3">&quot;text&quot;</span><span class="s1">] = value.rstrip(value[-</span><span class="s4">1</span><span class="s1">])</span>
+    <span class="s2">except</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s3">&quot;Nothing to delete&quot;</span><span class="s1">)</span>
+
+<span class="s0"># define dispalte lable</span>
+<span class="s1">counter = tkinter.Label(text=</span><span class="s3">&quot;&quot;</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">counter.grid(row=</span><span class="s4">0</span><span class="s2">, </span><span class="s1">columnspan=</span><span class="s4">4</span><span class="s1">)</span>
+
+<span class="s0"># button config</span>
+<span class="s1">btn_one = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;1&quot;</span><span class="s2">, </span><span class="s1">command=button_one</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_one.grid(row=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">0</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_two = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;2&quot;</span><span class="s2">, </span><span class="s1">command=button_two</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_two.grid(row=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_three = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;3&quot;</span><span class="s2">, </span><span class="s1">command=button_three</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_three.grid(row=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_plus = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;+&quot;</span><span class="s2">, </span><span class="s1">command=button_plus</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_plus.grid(row=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_four = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;4&quot;</span><span class="s2">, </span><span class="s1">command=button_four</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_four.grid(row=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">0</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_five = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;5&quot;</span><span class="s2">, </span><span class="s1">command=button_five</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_five.grid(row=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_six = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;6&quot;</span><span class="s2">, </span><span class="s1">command=button_six</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_six.grid(row=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_minus = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;-&quot;</span><span class="s2">, </span><span class="s1">command=button_minus</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_minus.grid(row=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_seven = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;7&quot;</span><span class="s2">, </span><span class="s1">command=button_seven</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_seven.grid(row=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">0</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_eight = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;8&quot;</span><span class="s2">, </span><span class="s1">command=button_eight</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_eight.grid(row=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_nine = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;9&quot;</span><span class="s2">, </span><span class="s1">command=button_nine</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_nine.grid(row=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_multiple = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;*&quot;</span><span class="s2">, </span><span class="s1">command=button_multiple</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_multiple.grid(row=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_multiple = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;del&quot;</span><span class="s2">, </span><span class="s1">command=button_del</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_multiple.grid(row=</span><span class="s4">4</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">0</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_multiple = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;0&quot;</span><span class="s2">, </span><span class="s1">command=button_zero</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_multiple.grid(row=</span><span class="s4">4</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">1</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_calc = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;=&quot;</span><span class="s2">, </span><span class="s1">command=button_calc</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_calc.grid(row=</span><span class="s4">4</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">2</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s1">btn_devide = tkinter.Button(master=calculator</span><span class="s2">, </span><span class="s1">text=</span><span class="s3">&quot;/&quot;</span><span class="s2">, </span><span class="s1">command=button_devide</span><span class="s2">, </span><span class="s1">font=(</span><span class="s3">'times'</span><span class="s2">, </span><span class="s4">15</span><span class="s2">, </span><span class="s3">'bold'</span><span class="s1">))</span>
+<span class="s1">btn_devide.grid(row=</span><span class="s4">4</span><span class="s2">, </span><span class="s1">column=</span><span class="s4">3</span><span class="s2">, </span><span class="s1">sticky=</span><span class="s3">&quot;nsew&quot;</span><span class="s1">)</span>
+
+<span class="s0"># holding window open</span>
+<span class="s1">calculator.mainloop()</span>
+</pre>
+</body>
+</html>
